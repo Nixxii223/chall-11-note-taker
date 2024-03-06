@@ -2,5 +2,10 @@
   {
     "title": "Test Title",
     "text": "Test text"
+  },
+  {
+    "title": "Another test",
+    "text": "New note\n",
+    "id": "f5e6df92-4946-43f9-9f38-d0f5e5b0b360"
   }
 ]
