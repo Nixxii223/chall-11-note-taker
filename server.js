@@ -4,7 +4,11 @@ const express = require('express');
 const app = express();
 const routes = require('./api/notes.js');
 
-app.listen(process.env.PORT || 3001, () => console.log('App is listening on port ' + (process.env.PORT || 3001)));
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => {
+  console.log(`App is listening on port ${PORT}`);
+});
 
 app.use(express.json()); // To parse JSON bodies
 app.use(express.static('public')); // Serve static files
